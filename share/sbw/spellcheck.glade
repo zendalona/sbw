@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.0"/>
+  <object class="GtkWindow" id="window">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Spell-Checker</property>
+    <property name="default-width">600</property>
+    <property name="default-height">400</property>
+    <property name="icon">icon.png</property>
+    <child>
+      <object class="GtkTable" id="table1">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <property name="border-width">12</property>
+        <property name="n-rows">5</property>
+        <property name="n-columns">6</property>
+        <child>
+          <object class="GtkLabel" id="label_misspelled_word">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">&lt;b&gt;&lt;span size = 'large'&gt;Misspelled Word&lt;/span&gt;&lt;/b&gt;</property>
+            <property name="use-markup">True</property>
+            <property name="use-underline">True</property>
+          </object>
+          <packing>
+            <property name="y-options"/>
+            <property name="y-padding">16</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_change">
+            <property name="label" translatable="yes">Change</property>
+            <property name="use-action-appearance">False</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="change" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="right-attach">4</property>
+            <property name="top-attach">1</property>
+            <property name="bottom-attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_Change_all">
+            <property name="label" translatable="yes">Change-all</property>
+            <property name="use-action-appearance">False</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="change_all" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">4</property>
+            <property name="right-attach">5</property>
+            <property name="top-attach">1</property>
+            <property name="bottom-attach">2</property>
+            <property name="x-padding">16</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_ignore">
+            <property name="label" translatable="yes">Ignore</property>
+            <property name="use-action-appearance">False</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="ignore" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">3</property>
+            <property name="right-attach">5</property>
+            <property name="top-attach">2</property>
+            <property name="bottom-attach">3</property>
+            <property name="x-options">GTK_FILL</property>
+            <property name="y-padding">14</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_ignore_all">
+            <property name="label" translatable="yes">Ignore-all</property>
+            <property name="use-action-appearance">False</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="ignore_all" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">5</property>
+            <property name="right-attach">6</property>
+            <property name="top-attach">2</property>
+            <property name="bottom-attach">3</property>
+            <property name="x-padding">16</property>
+            <property name="y-padding">14</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button5">
+            <property name="label" translatable="yes">Close</property>
+            <property name="use-action-appearance">False</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="close" swapped="no"/>
+          </object>
+          <packing>
+            <property name="right-attach">6</property>
+            <property name="top-attach">4</property>
+            <property name="bottom-attach">5</property>
+            <property name="y-options"/>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow" id="scrolledwindow">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <child>
+              <object class="GtkTreeView" id="treeview">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="border-width">10</property>
+                <child internal-child="selection">
+                  <object class="GtkTreeSelection" id="treeview-selection1"/>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="right-attach">3</property>
+            <property name="top-attach">1</property>
+            <property name="bottom-attach">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_delete">
+            <property name="label" translatable="yes">Delete</property>
+            <property name="use-action-appearance">False</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="delete" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left-attach">5</property>
+            <property name="right-attach">6</property>
+            <property name="top-attach">1</property>
+            <property name="bottom-attach">2</property>
+            <property name="x-padding">16</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_context">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">label</property>
+            <property name="use-underline">True</property>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="right-attach">6</property>
+            <property name="top-attach">3</property>
+            <property name="bottom-attach">4</property>
+            <property name="x-options">GTK_FILL</property>
+            <property name="y-options">GTK_FILL</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="entry_box">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="left-attach">1</property>
+            <property name="right-attach">6</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

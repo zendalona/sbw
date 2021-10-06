@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkAboutDialog" id="aboutdialog">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">About Sharada-Braille-Writer</property>
+    <property name="icon">icon.png</property>
+    <property name="type-hint">dialog</property>
+    <property name="program-name">SBW - Sharada Braille Writer</property>
+    <property name="version">3.0</property>
+    <property name="copyright" translatable="yes">Copyright (C) 2012-2014 Nalin &lt;nalin.x.linux@gmail.com&gt;
+Copyright (C) 2021-2022 Nalin &lt;nalin.x.linux@gmail.com&gt;
+
+Funded by State Council of Educational Research and Training (S.C.E.R.T) Kerala 
+Supervised by Zendalona(2021-2022) and Keltron(2012-2014)</property>
+    <property name="comments" translatable="yes">Sharada braille writer is a six key approach to producing print materials.
+ letters f, d, s, j, k, l represent 1 2 3 4 5 6 of the braille dots respectively.</property>
+    <property name="website">https://zendalona.com/sbw/</property>
+    <property name="website-label" translatable="yes">Visit S-B-W Home page</property>
+    <property name="authors">Nalin
+Anilkumar K.V
+K. Sathyaseelan</property>
+    <property name="documenters">Aswathi Raj</property>
+    <property name="translator-credits" translatable="yes">Aswathi Raj</property>
+    <property name="artists">Nahar
+Ajayakumar A. - initial designer
+Dr. J. Prasad (Director – SCERT Kerala)
+K.M. Unnikrishnan (SCERT Kerala)
+Anjana V.R Chandran (SCERT Kerala)
+Abdul Jaleel K.P.
+Anwar N
+Vinod Kollam
+Manuel eduardo cortéz vallejo
+Jones
+Jose TVM
+Agesh Kumar
+Hakkeem IT@School  </property>
+    <property name="logo">icon.png</property>
+    <property name="license-type">gpl-3-0</property>
+    <child internal-child="vbox">
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child internal-child="action_area">
+          <object class="GtkButtonBox">
+            <property name="can-focus">False</property>
+            <property name="layout-style">end</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">&lt;b&gt;Dedicated to my mother Sharada&lt;/b&gt;</property>
+            <property name="use-markup">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

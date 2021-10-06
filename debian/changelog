@@ -1,0 +1,220 @@
+sbw (3.6-1) focal; urgency=medium
+
+  * Initial git release
+
+ -- Nalin <nalin.x.linux@gmail.com>  Wed, 06 Oct 2021 21:13:26 +0530
+
+sbw (3.5-2) focal; urgency=medium
+
+  * Dependency changed (lib-braille-input -> libbraille-input)
+  * README.md updated
+  * copyright file updated
+  * menu entry and pixmap removed 
+    https://lists.debian.org/debian-devel-announce/2015/09/msg00000.html
+
+ -- Nalin <nalin.x.linux@gmail.com>  Wed, 06 Oct 2021 12:03:55 +0530
+
+sbw (3.5-1) focal; urgency=medium
+
+  * Auto capitalisation feature added
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 03 Oct 2021 14:24:07 +0530
+
+sbw (3.5) focal; urgency=medium
+
+  * User abbreviation manager blank bug fixed
+
+ -- Nalin <nalin.x.linux@gmail.com>  Wed, 29 Sep 2021 15:43:53 +0530
+
+sbw (3.4.9) focal; urgency=medium
+
+  * Alternative key 'n' for newline
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 26 Sep 2021 11:27:43 +0530
+
+sbw (3.4.8) focal; urgency=medium
+
+  * Made language persistence while opening other dialogs like save, find, etc
+  * User abbreviation expansion entry made newline supported
+  * User abbreviation expansion entry made language persistent to abbreviation entry
+  * User abbreviation storage format changed to json
+  * Bug fixes in User abbreviation manager
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sat, 25 Sep 2021 16:34:19 +0530
+
+sbw (3.4.7) focal; urgency=medium
+
+  * Tab selection shortcut bug fixed
+
+ -- Nalin <nalin.x.linux@gmail.com>  Fri, 24 Sep 2021 12:46:16 +0530
+
+sbw (3.4.6) focal; urgency=medium
+
+  * Status bar communication with orca screen reader improved
+  * Say line number (Ctrl+l)
+
+ -- Nalin <nalin.x.linux@gmail.com>  Fri, 24 Sep 2021 10:07:03 +0530
+
+sbw (3.4.5) focal; urgency=medium
+
+  * Auto scroll on braille input newline 
+
+ -- Nalin <nalin.x.linux@gmail.com>  Thu, 23 Sep 2021 12:16:19 +0530
+
+sbw (3.4.4) focal; urgency=medium
+
+  * Final package for beta testing
+
+ -- Nalin <nalin.x.linux@gmail.com>  Tue, 21 Sep 2021 11:54:21 +0530
+
+sbw (3.4.3) focal; urgency=medium
+
+  * Shortcuts for Increasing and decreasing font size 
+  * Made announce mathematical symbols
+
+ -- Nalin <nalin.x.linux@gmail.com>  Mon, 20 Sep 2021 16:37:55 +0530
+
+sbw (3.4.2) focal; urgency=medium
+
+  * Audio coverter label and icon fixed.
+  * Preferences dialog size decreased by moving table container to scrolled window.
+  * ToggleBrailleMode key changed to F12 for fixing normal input in dialogs.
+  * Language selection 12 key changed to ~ .
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 19 Sep 2021 09:31:14 +0530
+
+sbw (3.4.1) focal; urgency=medium
+
+  * Preferences FontButton glade file bug fixed
+  * Catch exceptions from cssProvider.load_from_data()
+
+ -- Nalin <nalin.x.linux@gmail.com>  Thu, 16 Sep 2021 10:56:32 +0530
+
+sbw (3.4) focal; urgency=medium
+
+  * Icon updated
+  * Bug fixes
+
+ -- Nalin <nalin.x.linux@gmail.com>  Thu, 02 Sep 2021 15:22:25 +0530
+
+sbw (3.3.9) focal; urgency=medium
+
+  * Liblouis mode space deletion bug fixed
+  * Direct language loading from menu bug fixed
+  * Go-to-line spin from top removed
+  * New icon
+  * Nemeth-Code-for-Mathematics made as default liblouis math table
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sat, 28 Aug 2021 14:24:20 +0530
+
+sbw (3.3.8) focal; urgency=medium
+
+  * Select all enabled
+  * Built in selection key changed to Right Ctrl
+  * Input method switching changed to Esc
+  * List switching changed to I
+  * Built-in emoji table added 
+
+ -- Nalin <nalin.x.linux@gmail.com>  Tue, 24 Aug 2021 15:57:52 +0530
+
+sbw (3.3.7) focal; urgency=medium
+
+  * Bugfixes
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 22 Aug 2021 16:54:02 +0530
+
+sbw (3.3.6) focal; urgency=medium
+
+  * Tab close button after opeining file
+  * Ctrl key bug fixed
+  * Keys F9, F10, F11, and F12 assigned for language switching
+  * Esc key assigned for Input method switching
+ -- Nalin <nalin.x.linux@gmail.com>  Tue, 17 Aug 2021 09:07:33 +0530
+
+sbw (3.3.5) focal; urgency=medium
+
+  * Bug in punctuation announcement fixed
+  * Prevent opening existing files in new tab
+  * Color themes and default theme
+  * Reset variables on focus switching
+  * Save-as bug fixed
+  * File overwrite warning added
+
+ -- Nalin <nalin.x.linux@gmail.com>  Thu, 12 Aug 2021 11:35:28 +0530
+
+sbw (3.3.4) focal; urgency=medium
+
+  * Announce punctuations
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sat, 07 Aug 2021 20:41:20 +0530
+
+sbw (3.3.3) focal; urgency=medium
+
+  * Quit without saving dialog escape key behaviour fixed
+  * Quit without saving dialog default button changed to 'No'
+  * Ctrl+A - Select all fixed
+  * Delete key fixed
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sat, 07 Aug 2021 11:31:44 +0530
+
+sbw (3.3.2) focal; urgency=medium
+
+  * File opening bugs fixed
+  * Menu file added
+  * Launcher updated
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 01 Aug 2021 12:40:18 +0530
+
+sbw (3.3.1) focal; urgency=medium
+
+  * Add undo/redo facility added.
+  * Selection made visible.
+  * Cursor made visible through setting font color.
+  * Go to line close button fixed 
+  * Go to line - line counting fixed. 
+  * Preferences one hand delay scale fixed.
+  * User-Guide sample file added
+  * Configuration saving file path changed.
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sat, 31 Jul 2021 14:27:49 +0530
+
+sbw (3.3) focal; urgency=medium
+
+  * Main UI widgets like auto new line moved to editor
+  * Built in bugfixed
+  * BrailleViews in save, find, spellcheck, etc made single line
+
+ -- Nalin <nalin.x.linux@gmail.com>  Wed, 28 Jul 2021 20:22:22 +0530
+
+sbw (3.2) focal; urgency=medium
+
+  * Built in abbreviations enabled
+  * Find, find and replace with biv
+  * Audio Converter with biv
+  * Connect other handlers like cut, copy, etc
+  * Spell checker with biv
+
+ -- Nalin <nalin.x.linux@gmail.com>  Mon, 26 Jul 2021 23:59:19 +0530
+
+sbw (3.1) focal; urgency=medium
+
+  * Toggle braille mode in abbreviation editor and save dialog
+  * Bug fixes
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sat, 24 Jul 2021 19:32:59 +0530
+
+sbw (3.0.1) focal; urgency=medium
+
+  * Preferences added
+  * User abbreviation editor added
+  * Save dialog entry made accept braille input
+
+ -- Nalin <nalin.x.linux@gmail.com>  Fri, 23 Jul 2021 10:54:49 +0530
+
+sbw (3.0) focal; urgency=medium
+
+  * New version 3.0
+
+ -- Nalin <nalin.x.linux@gmail.com>  Tue, 06 Apr 2021 11:03:09 +0530
+
+

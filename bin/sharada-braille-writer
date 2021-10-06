@@ -1,0 +1,45 @@
+#! /usr/bin/python3
+
+###########################################################################
+#    SBW - Sharada-Braille-Writer
+#
+#    Copyright (C) 2012-2014 Nalin <nalin.x.linux@gmail.com>
+#    Copyright (C) 2021-2022 Nalin <nalin.x.linux@gmail.com>
+#    
+#    This project is funded by State Council of Educational Research and Training (S.C.E.R.T) Kerala 
+#    Supervised by Zendalona(2021-2022) and Keltron(2012-2014)
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+###########################################################################
+
+import argparse
+parser = argparse.ArgumentParser(prog='sharada-braille-writer',
+description='Simple text editor with Braille input method',
+epilog='Developed by S.C.E.R.T Kerala')
+
+parser.add_argument("-v", "--version", help="Show version", action='store_true')
+parser.add_argument('files',
+                       action='store',
+                       nargs='*',
+                       default='')
+
+args = parser.parse_args()
+
+if __name__ == '__main__':
+	if(args.version):
+		from sbw.sbw import global_var
+		print("\n\nVersion : "+global_var.version+"\n\n")
+	else:
+		from sbw.sbw import BrailleWriter
+		BrailleWriter(args.files)
