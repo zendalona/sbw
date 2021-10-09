@@ -142,8 +142,8 @@ class Preferences():
 		for key in self.keycode_map.keys():
 			cp.set('key-bindings',str(key),str(self.keycode_map[key]))
 
-		cp.set('auto-capitalizing',"auto_capitalize_sentence",str(int(self.auto_capitalize_sentence)))
-		cp.set('auto-capitalizing',"auto_capitalize_line",str(int(self.auto_capitalize_line)))
+		cp.set('auto-capitalizing',"auto-capitalize-sentence",str(int(self.auto_capitalize_sentence)))
+		cp.set('auto-capitalizing',"auto-capitalize-line",str(int(self.auto_capitalize_line)))
 
 		cp.set('built-in',"simple-mode",str(int(self.simple_mode)))
 		cp.set('built-in',"conventional-braille",str(int(self.conventional_braille)))
