@@ -115,6 +115,7 @@ class Preferences():
 			self.line_limit = int(cp.get('line-limiting','line-limit'))
 			self.auto_new_line = int(cp.get('line-limiting','auto-new-line'))
 			
+			self.font  = cp.get('appearance','font')
 			self.theme = int(cp.get('appearance','theme'))
 
 			self.one_hand_mode = int(cp.get('one-hand-typing',"one-hand-mode"))
