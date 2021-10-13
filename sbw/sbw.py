@@ -663,16 +663,19 @@ class BrailleWriter():
 
 	def quit(self,widget, data=None):
 		unsaved = False
+		string_unsaved_tab_labels = _("Close ")
 		for page_number in range(0, self.notebook.get_n_pages()):
 			braille_editor = self.notebook.get_nth_page(page_number)
 			if(braille_editor.get_modified()):
 				unsaved = True
-				break
+				label = self.notebook.get_tab_label(braille_editor)
+				string_unsaved_tab_labels += label.get_children()[0].get_text()+", "
 		
 		if(unsaved):
-			dialog =  Gtk.Dialog(_("Quit ?"), self.window, 0,
-			(_("No"), Gtk.ResponseType.NO,_("Quit without saving"),Gtk.ResponseType.YES))			
-			label = Gtk.Label(_("Quit without saving ?"))
+			dialog =  Gtk.Dialog(_("Quit?"), self.window, 0,
+			(_("No"), Gtk.ResponseType.NO,_("Quit without saving?"),Gtk.ResponseType.YES))
+			label = Gtk.Label(string_unsaved_tab_labels[:-2]+" without saving?")
+
 			box = dialog.get_content_area();
 			box.add(label)
 			dialog.show_all()	
