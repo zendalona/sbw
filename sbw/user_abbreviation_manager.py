@@ -74,7 +74,7 @@ class UserAbbreviationManager():
 		label = Gtk.Label("Fill entrys with appropriate data \n")
 		box = dialog.get_content_area();
 		box.add(label)
-		table = Gtk.Table(2, 2, True)
+		table = Gtk.Table(3, 4, True)
 		box.add(table)
 		
 		entry_abbreviation = BrailleInputTextView()
@@ -83,6 +83,9 @@ class UserAbbreviationManager():
 		entry_abbreviation.set_single_line_mode(True)
 		label_abbreviation = Gtk.Label("Abbreviation")
 		label_abbreviation.set_mnemonic_widget(entry_abbreviation)
+
+		seperator = Gtk.HSeparator()
+		seperator.set_vexpand(True)
 
 		
 		def on_expansion_focused(widget,data):
@@ -93,15 +96,18 @@ class UserAbbreviationManager():
 		entry_expansion = BrailleInputTextView()
 		entry_expansion.set_variables_from_object(self.copy_object)
 		entry_expansion.set_accepts_tab(False)
+		entry_expansion.set_vexpand(True)
 		label_expansion = Gtk.Label("Expansion")
 		label_expansion.set_mnemonic_widget(entry_expansion)
+		label_expansion.set_hexpand(False)
 
 		entry_expansion.connect("focus-in-event", on_expansion_focused)
 		
 		table.attach(label_abbreviation,0,1,0,1)
-		table.attach(entry_abbreviation,1, 2, 0, 1)
-		table.attach(label_expansion, 0,1,1,2)
-		table.attach(entry_expansion, 1,2,1,2)
+		table.attach(entry_abbreviation,1, 4, 0, 1)
+		table.attach(seperator, 0, 4, 1,2)
+		table.attach(label_expansion, 0,1,2,3)
+		table.attach(entry_expansion, 1,4,2,3)
 		
 		dialog.show_all()
 		response = dialog.run()
