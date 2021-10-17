@@ -1,3 +1,12 @@
+sbw (3.6.5-1) focal; urgency=medium
+
+  * Option for enable/disable speech
+  * Auto Capitalize Sentence preference reading bug fixed
+  * Spell Check bug fixed
+  * TTS dictionary updated
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 17 Oct 2021 14:29:10 +0530
+
 sbw (3.6.4-1) focal; urgency=medium
 
   * Add user abbreviation dialog improved
