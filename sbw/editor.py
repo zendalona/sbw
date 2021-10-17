@@ -388,7 +388,7 @@ class BrailleEditor(Gtk.VBox):
 		text = textbuffer.get_text(start,end,False)		
 		Recorder(text, self.brailletextview)
 
-	def spell_check(self, language):
+	def spell_check(self):
 		SpellCheck(self.brailletextview,self.notify_language)
 
 	

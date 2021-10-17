@@ -627,7 +627,7 @@ class BrailleWriter():
 		
 	def spell_check(self,widget):
 		be = self.get_current_focused_braille_editor()
-		be.spell_check(self.notify_language)
+		be.spell_check()
 
 	def select_all(self,wedget,data=None):
 		be = self.get_current_focused_braille_editor()
