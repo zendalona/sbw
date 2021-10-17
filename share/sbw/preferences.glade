@@ -69,7 +69,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
             <property name="can-focus">True</property>
             <property name="vexpand">True</property>
             <child>
-              <!-- n-columns=3 n-rows=5 -->
+              <!-- n-columns=3 n-rows=6 -->
               <object class="GtkGrid">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -187,7 +187,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                   </object>
                   <packing>
                     <property name="left-attach">0</property>
-                    <property name="top-attach">4</property>
+                    <property name="top-attach">5</property>
                     <property name="width">3</property>
                   </packing>
                 </child>
@@ -268,7 +268,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                   </object>
                   <packing>
                     <property name="left-attach">0</property>
-                    <property name="top-attach">2</property>
+                    <property name="top-attach">3</property>
                     <property name="width">3</property>
                   </packing>
                 </child>
@@ -356,7 +356,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                   </object>
                   <packing>
                     <property name="left-attach">0</property>
-                    <property name="top-attach">3</property>
+                    <property name="top-attach">4</property>
                     <property name="width">3</property>
                   </packing>
                 </child>
@@ -415,6 +415,43 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">&lt;b&gt;Auto capitalizing&lt;/b&gt;</property>
+                        <property name="use-markup">True</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">2</property>
+                    <property name="width">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFrame">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label-xalign">0</property>
+                    <property name="shadow-type">none</property>
+                    <child>
+                      <object class="GtkAlignment">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="left-padding">12</property>
+                        <child>
+                          <object class="GtkCheckButton" id="checkbutton_speech">
+                            <property name="label" translatable="yes">Speech</property>
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="receives-default">False</property>
+                            <property name="draw-indicator">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                    <child type="label">
+                      <object class="GtkLabel">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">&lt;b&gt;Voice announcement&lt;/b&gt;</property>
                         <property name="use-markup">True</property>
                       </object>
                     </child>
