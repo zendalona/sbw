@@ -346,6 +346,7 @@ class BrailleWriter():
 			braille_editor.set_auto_capitalize_line(self.pref.auto_capitalize_line)
 			braille_editor.set_simple_mode(self.pref.simple_mode)
 			braille_editor.set_auto_new_line(self.pref.auto_new_line)
+			braille_editor.set_speech(self.pref.speech)
 			braille_editor.set_line_limit(self.pref.line_limit)
 
 
@@ -393,6 +394,7 @@ class BrailleWriter():
 		new_braille_editor.set_auto_capitalize_sentence(self.pref.auto_capitalize_sentence)
 		new_braille_editor.set_auto_capitalize_line(self.pref.auto_capitalize_line)
 		new_braille_editor.set_simple_mode(self.pref.simple_mode)
+		new_braille_editor.set_speech(self.pref.speech)
 		new_braille_editor.set_auto_new_line(self.pref.auto_new_line)
 		new_braille_editor.set_line_limit(self.pref.line_limit)
 

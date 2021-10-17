@@ -83,6 +83,7 @@ class Preferences():
 		self.auto_capitalize_sentence =  True
 		self.auto_capitalize_line =  False
 		self.simple_mode =  False
+		self.speech =  True
 		self.conventional_braille = False;
 		self.one_hand_mode = False
 		self.one_hand_conversion_delay = 500
@@ -115,6 +116,8 @@ class Preferences():
 			self.line_limit = int(cp.get('line-limiting','line-limit'))
 			self.auto_new_line = int(cp.get('line-limiting','auto-new-line'))
 			
+			self.speech = int(cp.get('voice-announcement',"speech"))
+
 			self.font  = cp.get('appearance','font')
 			self.theme = int(cp.get('appearance','theme'))
 
@@ -132,6 +135,7 @@ class Preferences():
 		cp.add_section('built-in')
 		cp.add_section('auto-capitalizing')
 		cp.add_section('line-limiting')
+		cp.add_section('voice-announcement')
 		cp.add_section('appearance')
 		cp.add_section('one-hand-typing')
 		cp.add_section('key-bindings')
@@ -151,6 +155,8 @@ class Preferences():
 
 		cp.set('line-limiting',"line-limit",str(int(self.line_limit)))
 		cp.set('line-limiting',"auto-new-line",str(int(self.auto_new_line)))
+
+		cp.set('voice-announcement',"speech",str(int(self.speech)))
 
 		cp.set('appearance',"font",self.font)
 		cp.set('appearance',"theme",str(int(self.theme)))
@@ -283,6 +289,10 @@ class Preferences():
 		self.checkbutton_auto_new_line = self.guibuilder.get_object("checkbutton_auto_new_line")
 		self.checkbutton_auto_new_line.set_active(self.auto_new_line)
 
+		#Set Speech checkbox
+		self.checkbutton_speech = self.guibuilder.get_object("checkbutton_speech")
+		self.checkbutton_speech.set_active(self.speech)
+
 		#Set auto new line checkbox
 		self.spinbutton_line_limit = self.guibuilder.get_object("spinbutton_line_limit")
 		self.spinbutton_line_limit.set_value(self.line_limit)
@@ -371,6 +381,8 @@ class Preferences():
 
 		self.auto_new_line = self.checkbutton_auto_new_line.get_active()
 		self.line_limit = self.spinbutton_line_limit.get_value_as_int()
+
+		self.speech = self.checkbutton_speech.get_active()
 
 		self.font = self.fontbutton.get_font_name()
 		self.theme = self.combobox_theme.get_active()

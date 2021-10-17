@@ -130,6 +130,12 @@ class BrailleEditor(Gtk.VBox):
 		fixed = Gtk.Fixed()
 		hbox.pack_start(fixed,True,True,0)
 
+		self.checkbutton_speech = Gtk.CheckButton("Speech")
+		self.checkbutton_speech.connect("toggled",self.on_speech_toggled)
+		hbox.pack_start(self.checkbutton_speech,False,True,0)
+		fixed = Gtk.Fixed()
+		hbox.pack_start(fixed,True,True,0)
+
 		self.checkbutton_simple_mode = Gtk.CheckButton("Simple mode")
 		self.checkbutton_simple_mode.connect("toggled",self.on_simple_mode_toggled)
 		hbox.pack_start(self.checkbutton_simple_mode,False,True,0)
@@ -200,6 +206,10 @@ class BrailleEditor(Gtk.VBox):
 	def on_simple_mode_toggled(self,widget):
 		value = int(widget.get_active())
 		self.brailletextview.set_simple_mode(value)
+
+	def on_speech_toggled(self,widget):
+		value = int(widget.get_active())
+		self.brailletextview.set_notification(value)
 
 	def on_auto_new_line_toggled(self,widget):
 		value = int(widget.get_active());
@@ -315,6 +325,10 @@ class BrailleEditor(Gtk.VBox):
 	def set_simple_mode(self, value):
 		self.checkbutton_simple_mode.set_active(value)
 		self.brailletextview.set_simple_mode(value)	
+
+	def set_speech(self, value):
+		self.checkbutton_speech.set_active(value)
+		self.brailletextview.set_notification(value)
 		
 	def set_auto_new_line(self, value):
 		self.checkbutton_auto_new_line.set_active(value)
