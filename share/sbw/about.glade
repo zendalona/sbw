@@ -23,19 +23,23 @@ Anilkumar K.V
 K. Sathyaseelan</property>
     <property name="documenters">Aswathi Raj</property>
     <property name="translator-credits" translatable="yes">Aswathi Raj</property>
-    <property name="artists">Nahar
+    <property name="artists">Nahar P
 Ajayakumar A. - initial designer
 Dr. J. Prasad (Director – SCERT Kerala)
 K.M. Unnikrishnan (SCERT Kerala)
 Anjana V.R Chandran (SCERT Kerala)
+Samuel Thibault
 Abdul Jaleel K.P.
+Ajaykumar M
+Yasir A K
 Anwar N
+Nidhin Panachikkal
+Jolsna Mathew
 Vinod Kollam
 Manuel eduardo cortéz vallejo
-Jones
-Jose TVM
 Agesh Kumar
-Hakkeem IT@School  </property>
+Hakkeem IT@School  
+Ruksana k p</property>
     <property name="logo">icon.png</property>
     <property name="license-type">gpl-3-0</property>
     <child internal-child="vbox">
