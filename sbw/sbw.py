@@ -342,7 +342,7 @@ class BrailleWriter():
 			braille_editor.set_font(self.pref.font)
 			braille_editor.set_theme(self.pref.theme)
 
-			braille_editor.set_simple_mode(self.pref.auto_capitalize_sentence)
+			braille_editor.set_auto_capitalize_sentence(self.pref.auto_capitalize_sentence)
 			braille_editor.set_auto_capitalize_line(self.pref.auto_capitalize_line)
 			braille_editor.set_simple_mode(self.pref.simple_mode)
 			braille_editor.set_auto_new_line(self.pref.auto_new_line)
