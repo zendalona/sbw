@@ -114,6 +114,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                 <child>
                   <object class="GtkFrame">
                     <property name="visible">True</property>
+                    <property name="sensitive">False</property>
                     <property name="can-focus">False</property>
                     <property name="hexpand">True</property>
                     <property name="vexpand">True</property>
