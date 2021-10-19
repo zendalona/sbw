@@ -73,7 +73,7 @@ class Preferences():
 
 
 	def set_default_preferences(self):
-		self.checked_languages_built_in = ["english","hindi", "kannada", "malayalam", "spanish", "tamil", "numerical", "arabic", "emoji", "sanskrit", "braille-patterns", "french",]
+		self.checked_languages_built_in = ["english","hindi", "kannada", "malayalam", "spanish", "tamil", "numerical", "arabic", "english-grade-2", "sanskrit", "braille-patterns", "french",]
 		self.checked_languages_liblouis = ["English-US-Grade-1", "English-US-Grade-2", "Malayalam-Grade-1", "Malayalam-Grade-2", "Hindi-Grade-1", 
 		"Tamil-Grade-1", "Kannada-Grade-1", "Arabic-Grade-1", "Nemeth-Code-for-Mathematics", "Sanskrit-Grade-1", "English-US-Grade-3", "Malayalam-Grade-3" ]
 		
