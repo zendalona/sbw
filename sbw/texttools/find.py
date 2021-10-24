@@ -136,5 +136,7 @@ class Find():
 			sentence_end.forward_sentence_end()
 			sentence = self.textbuffer.get_text(sentence_start,sentence_end,True)
 			self.context_label.set_text(self.trim_context_text(sentence))
+			self.context_label.grab_focus()
 		else:
 			self.context_label.set_text(_("Word {0} Not found").format(word))
+			self.context_label.grab_focus()

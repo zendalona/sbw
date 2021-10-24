@@ -65,9 +65,8 @@ class SpellCheck:
 		self.entry.set_variables_from_object(editor)
 		self.entry.set_accepts_tab(False)
 		self.entry.set_single_line_mode(True)
+		self.context_label.set_mnemonic_widget(self.entry)
 
-		label = builder.get_object("label_misspelled_word")
-		label.set_mnemonic_widget(self.entry)
 
 		box = builder.get_object("entry_box")			
 		box.pack_start(self.entry,True,True,0)
@@ -95,6 +94,10 @@ class SpellCheck:
 		desc.set_size((size+size/2)*Pango.SCALE)
 		self.tag = self.textbuffer.create_tag(font = desc)
 		
+		# accessibility fix
+		self.first_focus = True
+		self.close_button = builder.get_object("button_close")
+
 		#get the current cursor position 
 		mark = self.textbuffer.get_insert()
 		pos = self.textbuffer.get_iter_at_mark(mark)
@@ -182,7 +185,12 @@ class SpellCheck:
 			self.liststore.clear()
 			for item in self.dict.suggest(self.word):
 				self.liststore.append([item])
-			self.entry.grab_focus()
+
+			if(self.first_focus):
+				self.entry.grab_focus()
+				self.first_focus = False
+			else:
+				self.close_button.grab_focus()
 			return True
 		else:
 			self.spell_window.destroy()

@@ -119,6 +119,7 @@
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <property name="label" translatable="yes">context_label</property>
+            <property name="selectable">True</property>
           </object>
           <packing>
             <property name="right-attach">4</property>
