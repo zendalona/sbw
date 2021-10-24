@@ -50,10 +50,6 @@ class Recorder:
 		self.spinbutton_pitch = builder.get_object("spinbutton_pitch")
 		self.spinbutton_split = builder.get_object("spinbutton_split")
 		self.spinbutton_vloume = builder.get_object("spinbutton_vloume")
-		self.spinbutton_speed.set_value(170)
-		self.spinbutton_pitch.set_value(50)
-		self.spinbutton_split.set_value(5)
-		self.spinbutton_vloume.set_value(100)
 			
 		voice_combo = builder.get_object("combobox_language_convert")
 		
