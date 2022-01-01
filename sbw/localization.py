@@ -20,29 +20,8 @@
 #    You should have received a copy of the GNU General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ###########################################################################
-
-import os
-import gettext
-_ = gettext.gettext
-
-app_name_abbreviated = 'sbw'
-
-app_name = "Sharada-Braille-Writer"
-
-locale_dir =  '/usr/share/locale'
-
-version = "3.0"
-
-#Where the data is located
-data_dir = "/usr/share/sbw/";
-
-user_guide_file_path = data_dir+"user-guide/user-guide.html"
-
-user_conf_dir = os.environ['HOME']+"/.sbw/"
-
-user_preferences_file_path = user_conf_dir+'user-preferences.cfg'
-
-abbreviations_file_path = user_conf_dir+"abbreviations.json"
-
-#Changing directory to Home folder
-home_dir = os.environ['HOME']
+import locale
+from locale import gettext as _
+from sbw import global_var
+locale.bindtextdomain(global_var.app_name, global_var.locale_dir)
+locale.textdomain(global_var.app_name_abbreviated)

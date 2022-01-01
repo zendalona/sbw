@@ -36,6 +36,7 @@ setup(name='sbw',
       'share/sbw/main.glade', 'share/sbw/user_abbreviation_manager.glade','share/sbw/preferences.glade' ]),
       ('share/sbw/user-guide/',['share/sbw/user-guide/user-guide.html', 'share/sbw/user-guide/user-guide-malayalam.html', 'share/sbw/user-guide/method.jpg']),
       ('share/applications/',['share/applications/sharada-braille-writer.desktop']),
+      ('share/locale/ml/LC_MESSAGES/',['share/locale/ml/LC_MESSAGES/sbw.mo']),
       ('share/man/man1/',['share/man/man1/sharada-braille-writer.1.gz']),
       ('share/doc/sbw/',['share/doc/sbw/copyright']),
       ('bin',['bin/sharada-braille-writer'])]

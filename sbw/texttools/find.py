@@ -32,8 +32,8 @@ from gi.repository import Pango
 from sbw.textview import BrailleInputTextView
 from sbw import global_var
 
-import gettext
-_ = gettext.gettext
+from sbw import localization
+_ = localization._
 
 class Find():
 	def __init__ (self,editor,glade_file="find"):
@@ -64,7 +64,7 @@ class Find():
 		self.entry.set_single_line_mode(True)
 
 		label = Gtk.Label()
-		label.set_text("Search for : ")
+		label.set_text(_("Search for : "))
 		label.set_mnemonic_widget(self.entry)
 
 		box = self.builder.get_object("box_search_for")			

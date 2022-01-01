@@ -29,8 +29,10 @@ gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
 from sbw.textview import BrailleInputTextView
-
 from sbw import global_var
+
+from sbw import localization
+_ = localization._
 
 import json
 
@@ -48,11 +50,11 @@ class UserAbbreviationManager():
 		self.treeview.set_model(self.liststore)
 		
 		cell = Gtk.CellRendererText(editable=False)
-		col = Gtk.TreeViewColumn("Abbreviation",cell,text = 0)
+		col = Gtk.TreeViewColumn(_("Abbreviation"),cell,text = 0)
 		self.treeview.append_column(col)
 
 		cell = Gtk.CellRendererText(editable=False)
-		col = Gtk.TreeViewColumn("Expansion",cell,text = 1)
+		col = Gtk.TreeViewColumn(_("Expansion"),cell,text = 1)
 		self.treeview.append_column(col)	
 
 	def on_window_delete_event(self,widget, data=None):
@@ -70,8 +72,8 @@ class UserAbbreviationManager():
 		self.apply_abbreviations = function
 		
 	def add(self,widget,data=None):
-		dialog =  Gtk.Dialog("New entry",self.window,1,("Add",Gtk.ResponseType.YES,"Cancel",Gtk.ResponseType.NO))
-		label = Gtk.Label("Fill entrys with appropriate data \n")
+		dialog =  Gtk.Dialog(_("New entry"),self.window,1,(_("Add"),Gtk.ResponseType.YES,_("Cancel"),Gtk.ResponseType.NO))
+		label = Gtk.Label(_("Fill entrys with appropriate data \n"))
 		box = dialog.get_content_area();
 		box.add(label)
 		table = Gtk.Table(3, 4, True)
@@ -81,7 +83,7 @@ class UserAbbreviationManager():
 		entry_abbreviation.set_variables_from_object(self.copy_object)
 		entry_abbreviation.set_accepts_tab(False)
 		entry_abbreviation.set_single_line_mode(True)
-		label_abbreviation = Gtk.Label("Abbreviation")
+		label_abbreviation = Gtk.Label(_("Abbreviation"))
 		label_abbreviation.set_mnemonic_widget(entry_abbreviation)
 
 		seperator = Gtk.HSeparator()
@@ -90,14 +92,13 @@ class UserAbbreviationManager():
 		
 		def on_expansion_focused(widget,data):
 			entry_expansion.set_variables_from_object(entry_abbreviation)
-			print("Expansion focused")
 
 		
 		entry_expansion = BrailleInputTextView()
 		entry_expansion.set_variables_from_object(self.copy_object)
 		entry_expansion.set_accepts_tab(False)
 		entry_expansion.set_vexpand(True)
-		label_expansion = Gtk.Label("Expansion")
+		label_expansion = Gtk.Label(_("Expansion"))
 		label_expansion.set_mnemonic_widget(entry_expansion)
 		label_expansion.set_hexpand(False)
 
@@ -117,8 +118,8 @@ class UserAbbreviationManager():
 				self.liststore.append([entry_abbreviation.get_text(),entry_expansion.get_text()])
 				self.saved = False
 			else:
-				dialog_exist =  Gtk.Dialog("Warning!",self.window,1,("Skip",Gtk.ResponseType.NO,"Replace",Gtk.ResponseType.YES))
-				label = Gtk.Label("Expansion for this abbreviation already exists!")
+				dialog_exist =  Gtk.Dialog(_("Warning!"),self.window,1,(_("Skip"),Gtk.ResponseType.NO,_("Replace"),Gtk.ResponseType.YES))
+				label = Gtk.Label(_("Expansion for this abbreviation already exists!"))
 				box = dialog_exist.get_content_area();
 				box.add(label)
 				dialog_exist.show_all()
@@ -144,8 +145,8 @@ class UserAbbreviationManager():
 		
 		
 	def clear_all(self,widget,data=None):
-		dialog =  Gtk.Dialog("Warning!",self.window,1,("No",Gtk.ResponseType.NO,"Yes",Gtk.ResponseType.YES))
-		label = Gtk.Label("Clear all entries ?")
+		dialog =  Gtk.Dialog(_("Warning!"),self.window,1,(_("No"),Gtk.ResponseType.NO,_("Yes"),Gtk.ResponseType.YES))
+		label = Gtk.Label(_("Clear all entries ?"))
 		box = dialog.get_content_area();
 		box.add(label)
 		dialog.show_all()
@@ -178,10 +179,10 @@ class UserAbbreviationManager():
 				self.liststore.append([abb, exp])
 			else:
 				if (not skip_all and not replace_all):
-					dialog =  Gtk.Dialog("Warning!",None,1,("Skip",Gtk.ResponseType.NO,
-					"Skip-All",Gtk.ResponseType.NONE,"Replace",Gtk.ResponseType.YES,
-					"Replace-All",Gtk.ResponseType.APPLY))
-					label = Gtk.Label("Abbreviation "+abb+" already exist with expansion "+exp)
+					dialog =  Gtk.Dialog(_("Warning!"),None,1,(_("Skip"),Gtk.ResponseType.NO,
+					_("Skip-All"),Gtk.ResponseType.NONE,_("Replace"),Gtk.ResponseType.YES,
+					_("Replace-All"),Gtk.ResponseType.APPLY))
+					label = Gtk.Label(_("Abbreviation ")+abb+_(" already exist with expansion ")+exp)
 					box = dialog.get_content_area();
 					box.add(label)
 					dialog.show_all()
@@ -209,7 +210,7 @@ class UserAbbreviationManager():
 				self.saved = False
 				
 	def import_(self,widget,data=None):
-		open_file = Gtk.FileChooserDialog("Select the file to open",None,Gtk.FileChooserAction.OPEN,buttons=(Gtk.STOCK_OPEN,Gtk.ResponseType.OK))
+		open_file = Gtk.FileChooserDialog(_("Select the file to open"),None,Gtk.FileChooserAction.OPEN,buttons=(_("Open"),Gtk.ResponseType.OK))
 		open_file.set_current_folder("%s"%(os.environ['HOME']))
 		response = open_file.run()
 		if response == Gtk.ResponseType.OK:
@@ -228,7 +229,7 @@ class UserAbbreviationManager():
 			json.dump(abb_dict, f)
 	
 	def export(self,widget,data=None):
-		save_file = Gtk.FileChooserDialog("Export abbreviation list ",None,Gtk.FileChooserAction.SAVE,buttons=(Gtk.STOCK_SAVE,Gtk.ResponseType.OK))
+		save_file = Gtk.FileChooserDialog(_("Export abbreviation list "),None,Gtk.FileChooserAction.SAVE,buttons=(_("Save"),Gtk.ResponseType.OK))
 		save_file.set_current_folder("{}".format(os.environ['HOME']))
 		save_file.set_do_overwrite_confirmation(True);
 		filter = Gtk.FileFilter()

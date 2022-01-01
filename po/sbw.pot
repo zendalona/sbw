@@ -1,0 +1,1108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-08 09:41+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: share/sbw/user_abbreviation_manager.glade:7
+msgid "User abbreviation editor"
+msgstr ""
+
+#: share/sbw/user_abbreviation_manager.glade:42
+#: share/sbw/find_and_replace.glade:54 share/sbw/audio_converter.glade:168
+#: share/sbw/spellcheck.glade:89
+msgid "Close"
+msgstr ""
+
+#: share/sbw/user_abbreviation_manager.glade:57
+msgid "Export"
+msgstr ""
+
+#: share/sbw/user_abbreviation_manager.glade:71
+msgid "Import"
+msgstr ""
+
+#: share/sbw/user_abbreviation_manager.glade:85
+#: sbw/user_abbreviation_manager.py:75
+msgid "Add"
+msgstr ""
+
+#: share/sbw/user_abbreviation_manager.glade:100
+msgid "Remove"
+msgstr ""
+
+#: share/sbw/user_abbreviation_manager.glade:114
+msgid "Clear-All"
+msgstr ""
+
+#: share/sbw/about.glade:7
+msgid "About Sharada-Braille-Writer"
+msgstr ""
+
+#: share/sbw/about.glade:12
+msgid ""
+"Copyright (C) 2012-2014 Nalin <nalin.x.linux@gmail.com>\n"
+"Copyright (C) 2021-2022 Nalin <nalin.x.linux@gmail.com>\n"
+"\n"
+"Funded by State Council of Educational Research and Training (S.C.E.R.T) "
+"Kerala \n"
+"Supervised by Zendalona(2021-2022) and Keltron(2012-2014)"
+msgstr ""
+
+#: share/sbw/about.glade:17
+msgid ""
+"Sharada braille writer is a six key approach to producing print materials.\n"
+" letters f, d, s, j, k, l represent 1 2 3 4 5 6 of the braille dots "
+"respectively."
+msgstr ""
+
+#: share/sbw/about.glade:20
+msgid "Visit S-B-W Home page"
+msgstr ""
+
+#: share/sbw/about.glade:67
+msgid "Dedicated to my mother Sharada"
+msgstr ""
+
+#: share/sbw/find_and_replace.glade:7 share/sbw/main.glade:353
+msgid "Find & Replace"
+msgstr ""
+
+#: share/sbw/find_and_replace.glade:37 sbw/editor.py:512
+#: sbw/user_abbreviation_manager.py:121 sbw/user_abbreviation_manager.py:183
+msgid "Replace"
+msgstr ""
+
+#: share/sbw/find_and_replace.glade:70 sbw/user_abbreviation_manager.py:184
+msgid "Replace-All"
+msgstr ""
+
+#: share/sbw/find_and_replace.glade:121 share/sbw/find.glade:70
+msgid "context_label"
+msgstr ""
+
+#: share/sbw/find.glade:7 share/sbw/main.glade:341
+msgid "Find"
+msgstr ""
+
+#: share/sbw/find.glade:50 share/sbw/preferences.glade:1691
+msgid "_Close"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:35
+msgid "Audio-Converter"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:47
+msgid "Speed (Word Per Minute)"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:75
+msgid "Pitch"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:90
+msgid "Split time(Per Minute)"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:153
+msgid "Convert"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:186
+msgid "Language"
+msgstr ""
+
+#: share/sbw/audio_converter.glade:201
+msgid "Volume"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:7
+msgid "Spell-Checker"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:20
+msgid "Change"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:36
+msgid "Change-all"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:53
+msgid "Ignore"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:71
+msgid "Ignore-all"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:126 share/sbw/main.glade:312
+msgid "Delete"
+msgstr ""
+
+#: share/sbw/spellcheck.glade:158 share/sbw/main.glade:704
+msgid "label"
+msgstr ""
+
+#: share/sbw/main.glade:129
+msgid "Sharada Braille Writer"
+msgstr ""
+
+#: share/sbw/main.glade:148
+msgid "_File"
+msgstr ""
+
+#: share/sbw/main.glade:156 share/sbw/main.glade:580 sbw/editor.py:422
+msgid "New"
+msgstr ""
+
+#: share/sbw/main.glade:168 share/sbw/main.glade:595 sbw/sbw.py:555
+#: sbw/editor.py:432 sbw/user_abbreviation_manager.py:213
+msgid "Open"
+msgstr ""
+
+#: share/sbw/main.glade:180 share/sbw/main.glade:610
+#: sbw/texttools/audio_converter.py:81 sbw/editor.py:409 sbw/editor.py:511
+#: sbw/editor.py:548 sbw/user_abbreviation_manager.py:232
+msgid "Save"
+msgstr ""
+
+#: share/sbw/main.glade:192 sbw/editor.py:512
+msgid "Save as"
+msgstr ""
+
+#: share/sbw/main.glade:210 share/sbw/main.glade:669
+msgid "Quit"
+msgstr ""
+
+#: share/sbw/main.glade:229
+msgid "Edit"
+msgstr ""
+
+#: share/sbw/main.glade:237
+msgid "Undo"
+msgstr ""
+
+#: share/sbw/main.glade:248
+msgid "Redo"
+msgstr ""
+
+#: share/sbw/main.glade:265
+msgid "Select All"
+msgstr ""
+
+#: share/sbw/main.glade:276
+msgid "Cut"
+msgstr ""
+
+#: share/sbw/main.glade:288
+msgid "Copy"
+msgstr ""
+
+#: share/sbw/main.glade:300
+msgid "Paste"
+msgstr ""
+
+#: share/sbw/main.glade:329
+msgid "Go-to-line"
+msgstr ""
+
+#: share/sbw/main.glade:371 share/sbw/main.glade:654
+msgid "Preferences"
+msgstr ""
+
+#: share/sbw/main.glade:389
+msgid "_Language"
+msgstr ""
+
+#: share/sbw/main.glade:399 share/sbw/preferences.glade:49
+msgid "Liblouis"
+msgstr ""
+
+#: share/sbw/main.glade:407 share/sbw/preferences.glade:46
+msgid "Built-in"
+msgstr ""
+
+#: share/sbw/main.glade:420 share/sbw/preferences.glade:769
+#: sbw/user_abbreviation_manager.py:53 sbw/user_abbreviation_manager.py:86
+msgid "Abbreviation"
+msgstr ""
+
+#: share/sbw/main.glade:431
+msgid "Manage user abbreviations"
+msgstr ""
+
+#: share/sbw/main.glade:441
+msgid "Expand Short-Hand Text"
+msgstr ""
+
+#: share/sbw/main.glade:456
+msgid "_Tools"
+msgstr ""
+
+#: share/sbw/main.glade:464
+msgid "Say line number"
+msgstr ""
+
+#: share/sbw/main.glade:475
+msgid "Spell Check"
+msgstr ""
+
+#: share/sbw/main.glade:487
+msgid "audio-converter"
+msgstr ""
+
+#: share/sbw/main.glade:498
+msgid "Increase font size"
+msgstr ""
+
+#: share/sbw/main.glade:509
+msgid "Decrease font size"
+msgstr ""
+
+#: share/sbw/main.glade:528
+msgid "Help"
+msgstr ""
+
+#: share/sbw/main.glade:536 share/sbw/main.glade:640
+msgid "About"
+msgstr ""
+
+#: share/sbw/main.glade:547
+msgid "User guide"
+msgstr ""
+
+#: share/sbw/main.glade:625
+msgid "Spell-Check"
+msgstr ""
+
+#: share/sbw/main.glade:700
+msgid "Welcome to SBW-3.0"
+msgstr ""
+
+#: share/sbw/main.glade:716
+msgid "notification"
+msgstr ""
+
+#: share/sbw/main.glade:728
+msgid "statusbar"
+msgstr ""
+
+#: share/sbw/preferences.glade:55
+msgid "SBW Preferences"
+msgstr ""
+
+#: share/sbw/preferences.glade:84
+msgid "Default table type"
+msgstr ""
+
+#: share/sbw/preferences.glade:137
+msgid "Enabled"
+msgstr ""
+
+#: share/sbw/preferences.glade:156
+msgid "One Hand Conversion Delay "
+msgstr ""
+
+#: share/sbw/preferences.glade:186
+msgid "One hand mode"
+msgstr ""
+
+#: share/sbw/preferences.glade:219 sbw/editor.py:127
+msgid "Auto new line"
+msgstr ""
+
+#: share/sbw/preferences.glade:252
+msgid "Limit"
+msgstr ""
+
+#: share/sbw/preferences.glade:269
+msgid "Line limiting"
+msgstr ""
+
+#: share/sbw/preferences.glade:318
+msgid "Font"
+msgstr ""
+
+#: share/sbw/preferences.glade:331
+msgid "Theme"
+msgstr ""
+
+#: share/sbw/preferences.glade:359
+msgid "View"
+msgstr ""
+
+#: share/sbw/preferences.glade:392
+msgid "Sentence"
+msgstr ""
+
+#: share/sbw/preferences.glade:406
+msgid "Line"
+msgstr ""
+
+#: share/sbw/preferences.glade:426
+msgid "Auto capitalizing"
+msgstr ""
+
+#: share/sbw/preferences.glade:452 sbw/editor.py:133
+msgid "Speech"
+msgstr ""
+
+#: share/sbw/preferences.glade:465
+msgid "Voice announcement"
+msgstr ""
+
+#: share/sbw/preferences.glade:484
+msgid "General"
+msgstr ""
+
+#: share/sbw/preferences.glade:548
+msgid "Liblouis languages"
+msgstr ""
+
+#: share/sbw/preferences.glade:572
+msgid "Conventional Braille"
+msgstr ""
+
+#: share/sbw/preferences.glade:586 sbw/editor.py:139
+msgid "Simple mode"
+msgstr ""
+
+#: share/sbw/preferences.glade:635
+msgid "Built-in languages"
+msgstr ""
+
+#: share/sbw/preferences.glade:678
+msgid "Braille-Dot-1"
+msgstr ""
+
+#: share/sbw/preferences.glade:691
+msgid "Braille-Dot-2"
+msgstr ""
+
+#: share/sbw/preferences.glade:704
+msgid "Braille-Dot-3"
+msgstr ""
+
+#: share/sbw/preferences.glade:717
+msgid "Braille-Dot-4"
+msgstr ""
+
+#: share/sbw/preferences.glade:730
+msgid "Braille-Dot-5"
+msgstr ""
+
+#: share/sbw/preferences.glade:743
+msgid "Braille-Dot-6"
+msgstr ""
+
+#: share/sbw/preferences.glade:756
+msgid "Punctuation"
+msgstr ""
+
+#: share/sbw/preferences.glade:782
+msgid "Capitol/chill"
+msgstr ""
+
+#: share/sbw/preferences.glade:795
+msgid "Letter-Deletion"
+msgstr ""
+
+#: share/sbw/preferences.glade:928
+msgid "Braille-Dot-7"
+msgstr ""
+
+#: share/sbw/preferences.glade:941
+msgid "Braille-Dot-8"
+msgstr ""
+
+#: share/sbw/preferences.glade:990
+msgid "One-Hand-Skip"
+msgstr ""
+
+#: share/sbw/preferences.glade:1003
+msgid "List switcher"
+msgstr ""
+
+#: share/sbw/preferences.glade:1028
+msgid "New line"
+msgstr ""
+
+#: share/sbw/preferences.glade:1053
+msgid "Space"
+msgstr ""
+
+#: share/sbw/preferences.glade:1078
+msgid "New line 2"
+msgstr ""
+
+#: share/sbw/preferences.glade:1158
+msgid "Keys"
+msgstr ""
+
+#: share/sbw/preferences.glade:1191
+msgid "Built-in selection"
+msgstr ""
+
+#: share/sbw/preferences.glade:1228
+msgid "Switch language"
+msgstr ""
+
+#: share/sbw/preferences.glade:1241
+msgid "Language 1"
+msgstr ""
+
+#: share/sbw/preferences.glade:1254
+msgid "Language 2"
+msgstr ""
+
+#: share/sbw/preferences.glade:1267
+msgid "Language 3"
+msgstr ""
+
+#: share/sbw/preferences.glade:1280
+msgid "Language 4"
+msgstr ""
+
+#: share/sbw/preferences.glade:1293
+msgid "Language 5"
+msgstr ""
+
+#: share/sbw/preferences.glade:1306
+msgid "Language 6"
+msgstr ""
+
+#: share/sbw/preferences.glade:1319
+msgid "Language 7"
+msgstr ""
+
+#: share/sbw/preferences.glade:1332
+msgid "Language 8"
+msgstr ""
+
+#: share/sbw/preferences.glade:1441
+msgid "Toggle braille mode"
+msgstr ""
+
+#: share/sbw/preferences.glade:1465
+msgid "Language 9"
+msgstr ""
+
+#: share/sbw/preferences.glade:1478
+msgid "Language 10"
+msgstr ""
+
+#: share/sbw/preferences.glade:1491
+msgid "Language 11"
+msgstr ""
+
+#: share/sbw/preferences.glade:1504
+msgid "Language 12"
+msgstr ""
+
+#: share/sbw/preferences.glade:1614
+msgid "Shortcuts"
+msgstr ""
+
+#: share/sbw/preferences.glade:1641
+msgid "Key-Bindings"
+msgstr ""
+
+#: share/sbw/preferences.glade:1661
+msgid "_Apply"
+msgstr ""
+
+#: share/sbw/preferences.glade:1677
+msgid "Restore"
+msgstr ""
+
+#: sbw/texttools/find.py:67
+msgid "Search for : "
+msgstr ""
+
+#: sbw/texttools/find.py:141
+#, python-brace-format
+msgid "Word {0} Not found"
+msgstr ""
+
+#: sbw/texttools/spellcheck.py:49
+msgid "Dict not found!"
+msgstr ""
+
+#: sbw/texttools/spellcheck.py:50
+#, python-brace-format
+msgid "Please install the aspell dict for your language({0})"
+msgstr ""
+
+#: sbw/texttools/spellcheck.py:82
+msgid "Suggestions : "
+msgstr ""
+
+#: sbw/texttools/spellcheck.py:86
+msgid "text"
+msgstr ""
+
+#: sbw/texttools/spellcheck.py:181
+#, python-brace-format
+msgid "Misspelled word {0} : -  {1}"
+msgstr ""
+
+#: sbw/texttools/audio_converter.py:78
+msgid "Type the output wav name"
+msgstr ""
+
+#: sbw/texttools/audio_converter.py:81 sbw/sbw.py:554 sbw/editor.py:431
+#: sbw/editor.py:464 sbw/editor.py:548 sbw/user_abbreviation_manager.py:75
+msgid "Cancel"
+msgstr ""
+
+#: sbw/texttools/audio_converter.py:90 sbw/editor.py:473
+msgid "Filename : "
+msgstr ""
+
+#: sbw/texttools/find_and_replace.py:49
+msgid "Replace with : "
+msgstr ""
+
+#: sbw/sbw.py:93
+msgid "new_line"
+msgstr ""
+
+#: sbw/sbw.py:94
+msgid "space"
+msgstr ""
+
+#: sbw/sbw.py:94
+msgid "questionmark"
+msgstr ""
+
+#: sbw/sbw.py:95
+msgid "comma"
+msgstr ""
+
+#: sbw/sbw.py:95
+msgid "multiplication dot"
+msgstr ""
+
+#: sbw/sbw.py:95
+msgid "full stop"
+msgstr ""
+
+#: sbw/sbw.py:95
+msgid "exclamation"
+msgstr ""
+
+#: sbw/sbw.py:96
+msgid "opening bracket"
+msgstr ""
+
+#: sbw/sbw.py:96
+msgid "closing bracket"
+msgstr ""
+
+#: sbw/sbw.py:97
+msgid "double_quote"
+msgstr ""
+
+#: sbw/sbw.py:97
+msgid "single_quote"
+msgstr ""
+
+#: sbw/sbw.py:98
+msgid "slash"
+msgstr ""
+
+#: sbw/sbw.py:98
+msgid "backslash"
+msgstr ""
+
+#: sbw/sbw.py:98
+msgid "semicolon"
+msgstr ""
+
+#: sbw/sbw.py:98
+msgid "Dash"
+msgstr ""
+
+#: sbw/sbw.py:98
+msgid "Ellipsis"
+msgstr ""
+
+#: sbw/sbw.py:99
+msgid "colon"
+msgstr ""
+
+#: sbw/sbw.py:99
+msgid "opening curly bracket"
+msgstr ""
+
+#: sbw/sbw.py:99
+msgid "closing curly bracket"
+msgstr ""
+
+#: sbw/sbw.py:100
+msgid "opening square bracket"
+msgstr ""
+
+#: sbw/sbw.py:100
+msgid "closing square bracket"
+msgstr ""
+
+#: sbw/sbw.py:101
+msgid "Trapezium"
+msgstr ""
+
+#: sbw/sbw.py:102
+msgid "White Star"
+msgstr ""
+
+#: sbw/sbw.py:103
+msgid "Paragraph mark"
+msgstr ""
+
+#: sbw/sbw.py:104
+msgid "Halfwidth leftwards arrow"
+msgstr ""
+
+#: sbw/sbw.py:105
+msgid "Plus followed by minus"
+msgstr ""
+
+#: sbw/sbw.py:106
+msgid "Ditto Mark"
+msgstr ""
+
+#: sbw/sbw.py:107 sbw/sbw.py:149
+msgid "Prime"
+msgstr ""
+
+#: sbw/sbw.py:108
+msgid "Note less than"
+msgstr ""
+
+#: sbw/sbw.py:109
+msgid "Acute angle"
+msgstr ""
+
+#: sbw/sbw.py:110
+msgid "Rectangle"
+msgstr ""
+
+#: sbw/sbw.py:111
+msgid "Circle"
+msgstr ""
+
+#: sbw/sbw.py:112
+msgid "is perpenticular to"
+msgstr ""
+
+#: sbw/sbw.py:113
+msgid "is parallel to"
+msgstr ""
+
+#: sbw/sbw.py:114
+msgid "Check mark"
+msgstr ""
+
+#: sbw/sbw.py:115
+msgid "Ditto mark"
+msgstr ""
+
+#: sbw/sbw.py:116
+msgid "Ratio"
+msgstr ""
+
+#: sbw/sbw.py:117
+msgid "Vertical"
+msgstr ""
+
+#: sbw/sbw.py:118
+msgid "Horizondal"
+msgstr ""
+
+#: sbw/sbw.py:119
+msgid "Less than"
+msgstr ""
+
+#: sbw/sbw.py:120
+msgid "Greater than"
+msgstr ""
+
+#: sbw/sbw.py:121
+msgid "Bar over greater than"
+msgstr ""
+
+#: sbw/sbw.py:122
+msgid "Bar over less than"
+msgstr ""
+
+#: sbw/sbw.py:123
+msgid "Is less than or equal to"
+msgstr ""
+
+#: sbw/sbw.py:124
+msgid "Is greater than or equal to"
+msgstr ""
+
+#: sbw/sbw.py:125
+msgid "Is equal to or less than"
+msgstr ""
+
+#: sbw/sbw.py:126
+msgid "Is equal to or greater than"
+msgstr ""
+
+#: sbw/sbw.py:127
+msgid "Is greater than followed by less than"
+msgstr ""
+
+#: sbw/sbw.py:128
+msgid "Is less than followed by greater than"
+msgstr ""
+
+#: sbw/sbw.py:129
+msgid "Is greater than followed by equals sign followed by less than"
+msgstr ""
+
+#: sbw/sbw.py:130
+msgid "Is less than followed by equals sign followed by greater than"
+msgstr ""
+
+#: sbw/sbw.py:131
+msgid "Right Triangle"
+msgstr ""
+
+#: sbw/sbw.py:132
+msgid "Parallellogram"
+msgstr ""
+
+#: sbw/sbw.py:133
+msgid "Arc upward"
+msgstr ""
+
+#: sbw/sbw.py:134
+msgid "Arc downward"
+msgstr ""
+
+#: sbw/sbw.py:135
+msgid "Pentagon"
+msgstr ""
+
+#: sbw/sbw.py:136
+msgid "Hexagon"
+msgstr ""
+
+#: sbw/sbw.py:137
+msgid "Equall sign under single tilde"
+msgstr ""
+
+#: sbw/sbw.py:138
+msgid "Bar under single tilde"
+msgstr ""
+
+#: sbw/sbw.py:139
+msgid "Angle acute"
+msgstr ""
+
+#: sbw/sbw.py:140
+msgid "Angle obtuse"
+msgstr ""
+
+#: sbw/sbw.py:141
+msgid "Right Angle"
+msgstr ""
+
+#: sbw/sbw.py:142
+msgid "Acute triangle"
+msgstr ""
+
+#: sbw/sbw.py:143
+msgid "Circle with interior plus sign"
+msgstr ""
+
+#: sbw/sbw.py:144
+msgid "Circle with interior cross sign"
+msgstr ""
+
+#: sbw/sbw.py:145
+msgid "Square with interior dot sign"
+msgstr ""
+
+#: sbw/sbw.py:146
+msgid "Right pointing short"
+msgstr ""
+
+#: sbw/sbw.py:147
+msgid "Reverse arrows"
+msgstr ""
+
+#: sbw/sbw.py:148
+msgid "Implication"
+msgstr ""
+
+#: sbw/sbw.py:150
+msgid "Minute"
+msgstr ""
+
+#: sbw/sbw.py:151
+msgid "Second"
+msgstr ""
+
+#: sbw/sbw.py:152
+msgid "such that"
+msgstr ""
+
+#: sbw/sbw.py:153
+msgid "Vertical Bar"
+msgstr ""
+
+#: sbw/sbw.py:154
+msgid "Is not greator than"
+msgstr ""
+
+#: sbw/sbw.py:155
+msgid "not less than"
+msgstr ""
+
+#: sbw/sbw.py:156
+msgid "Is not parallel to"
+msgstr ""
+
+#: sbw/sbw.py:157
+msgid "Question mark over equal sign"
+msgstr ""
+
+#: sbw/sbw.py:158
+msgid "Small letter Omega"
+msgstr ""
+
+#: sbw/sbw.py:159
+msgid "is an element of (Membership)"
+msgstr ""
+
+#: sbw/sbw.py:160
+msgid "Contains the element"
+msgstr ""
+
+#: sbw/sbw.py:161
+msgid "inclusion sign"
+msgstr ""
+
+#: sbw/sbw.py:162
+msgid "reverse inclusion sign"
+msgstr ""
+
+#: sbw/sbw.py:163
+msgid "intersection set"
+msgstr ""
+
+#: sbw/sbw.py:164
+msgid "Union set"
+msgstr ""
+
+#: sbw/sbw.py:165 sbw/sbw.py:166
+msgid "Empty set"
+msgstr ""
+
+#: sbw/sbw.py:167
+msgid "Bar under inclusion sign"
+msgstr ""
+
+#: sbw/sbw.py:168
+msgid "Bar under reverse inclusion"
+msgstr ""
+
+#: sbw/sbw.py:327 sbw/user_abbreviation_manager.py:121
+#: sbw/user_abbreviation_manager.py:148 sbw/user_abbreviation_manager.py:182
+msgid "Warning!"
+msgstr ""
+
+#: sbw/sbw.py:327 sbw/user_abbreviation_manager.py:148
+msgid "Yes"
+msgstr ""
+
+#: sbw/sbw.py:328
+msgid "Apply preferences on all existing tabs ?"
+msgstr ""
+
+#: sbw/sbw.py:418
+msgid "Unsaved document "
+msgstr ""
+
+#: sbw/sbw.py:553 sbw/editor.py:429 sbw/user_abbreviation_manager.py:213
+msgid "Select the file to open"
+msgstr ""
+
+#: sbw/sbw.py:580
+msgid "Files already opened!"
+msgstr ""
+
+#: sbw/sbw.py:581
+msgid "Okay"
+msgstr ""
+
+#: sbw/sbw.py:582
+msgid "Following files are already opened in other tabs \n"
+msgstr ""
+
+#: sbw/sbw.py:678
+msgid "Close "
+msgstr ""
+
+#: sbw/sbw.py:687
+msgid "Quit?"
+msgstr ""
+
+#: sbw/sbw.py:688 sbw/user_abbreviation_manager.py:148
+msgid "No"
+msgstr ""
+
+#: sbw/sbw.py:688
+msgid "Quit without saving?"
+msgstr ""
+
+#: sbw/sbw.py:689
+msgid " without saving?"
+msgstr ""
+
+#: sbw/editor.py:91
+msgid "Font "
+msgstr ""
+
+#: sbw/editor.py:104
+msgid "Theme "
+msgstr ""
+
+#: sbw/editor.py:115
+msgid "Line limit"
+msgstr ""
+
+#: sbw/editor.py:145
+msgid "Auto capitalize sentence"
+msgstr ""
+
+#: sbw/editor.py:151
+msgid "Auto capitalize line"
+msgstr ""
+
+#: sbw/editor.py:226
+msgid "Font size increased to "
+msgstr ""
+
+#: sbw/editor.py:229
+msgid "Font size decreased to "
+msgstr ""
+
+#: sbw/editor.py:362
+msgid "Go to Line "
+msgstr ""
+
+#: sbw/editor.py:362
+msgid "Go"
+msgstr ""
+
+#: sbw/editor.py:362
+msgid "Close!"
+msgstr ""
+
+#: sbw/editor.py:383
+msgid "Current Line : "
+msgstr ""
+
+#: sbw/editor.py:408 sbw/editor.py:411
+msgid "Start new without saving ?"
+msgstr ""
+
+#: sbw/editor.py:409
+msgid "Start-New!"
+msgstr ""
+
+#: sbw/editor.py:506 sbw/editor.py:522 sbw/editor.py:535
+msgid "Text saved to {}"
+msgstr ""
+
+#: sbw/editor.py:513
+msgid "File exist! Do you want to replace it ?"
+msgstr ""
+
+#: sbw/editor.py:548
+msgid "Close without saving"
+msgstr ""
+
+#: sbw/editor.py:549
+msgid "Close without saving ?."
+msgstr ""
+
+#: sbw/editor.py:592
+msgid "Selection Deleted"
+msgstr ""
+
+#: sbw/preferences.py:207
+msgid "Table "
+msgstr ""
+
+#: sbw/preferences.py:243
+msgid "Language "
+msgstr ""
+
+#: sbw/preferences.py:355
+msgid "Unassigned keybinding found"
+msgstr ""
+
+#: sbw/preferences.py:356
+msgid "Find and fix unassigned keybindings before applying"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:57 sbw/user_abbreviation_manager.py:101
+msgid "Expansion"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:75
+msgid "New entry"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:76
+msgid "Fill entrys with appropriate data \n"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:121 sbw/user_abbreviation_manager.py:182
+msgid "Skip"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:122
+msgid "Expansion for this abbreviation already exists!"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:149
+msgid "Clear all entries ?"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:183
+msgid "Skip-All"
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:185
+msgid "Abbreviation "
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:185
+msgid " already exist with expansion "
+msgstr ""
+
+#: sbw/user_abbreviation_manager.py:232
+msgid "Export abbreviation list "
+msgstr ""

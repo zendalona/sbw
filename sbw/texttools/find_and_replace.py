@@ -33,8 +33,8 @@ from sbw.textview import BrailleInputTextView
 from sbw.texttools.find import Find
 from sbw import global_var
 
-import gettext
-_ = gettext.gettext
+from sbw import localization
+_ = localization._
 
 class FindAndReplace(Find):
 	def __init__(self,editor,glade_file="find_and_replace"):
@@ -46,7 +46,7 @@ class FindAndReplace(Find):
 		self.replace_entry.set_single_line_mode(True)
 
 		label = Gtk.Label()
-		label.set_text("Replace with : ")
+		label.set_text(_("Replace with : "))
 		label.set_mnemonic_widget(self.replace_entry)
 
 		box = self.builder.get_object("box_replace_with")			

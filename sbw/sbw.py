@@ -48,9 +48,8 @@ from sbw.editor import BrailleEditor
 from sbw import global_var
 from sbw import user_abbreviation_manager
 
-import gettext
-_ = gettext.gettext
-gettext.textdomain('sbw')
+from sbw import localization
+_ = localization._
 
 
 ########################## Temporary fix ###################
@@ -325,8 +324,8 @@ class BrailleWriter():
 	def apply_preferences_on_existing_text_views(self):
 		notebook_page_count = self.notebook.get_n_pages()
 		if (notebook_page_count > 1):
-			dialog =  Gtk.Dialog("Warning!",self.window,0,("Yes",Gtk.ResponseType.YES, "No",Gtk.ResponseType.NO))
-			label = Gtk.Label("Apply preferences on all existing tabs ?")
+			dialog =  Gtk.Dialog(_("Warning!"),self.window,0,(_("Yes"),Gtk.ResponseType.YES, "No",Gtk.ResponseType.NO))
+			label = Gtk.Label(_("Apply preferences on all existing tabs ?"))
 			box = dialog.get_content_area();
 			box.add(label)
 			dialog.show_all()
@@ -416,7 +415,7 @@ class BrailleWriter():
 		
 		number = self.notebook.get_n_pages()
 		
-		label = Gtk.Label(label="Unsaved document "+str(number+1))
+		label = Gtk.Label(label=_("Unsaved document ")+str(number+1))
 		button = Gtk.Button(None,image=Gtk.Image(stock=Gtk.STOCK_CLOSE))
 		button.set_relief(Gtk.ReliefStyle.NONE)
 		button.connect("clicked",self.close_tab, new_braille_editor)
@@ -552,8 +551,8 @@ class BrailleWriter():
 
 	def open(self,wedget,data=None):
 		open_file_chooser = Gtk.FileChooserDialog(_("Select the file to open"),None, 
-		Gtk.FileChooserAction.OPEN, buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, 
-		Gtk.STOCK_OPEN,Gtk.ResponseType.OK))
+		Gtk.FileChooserAction.OPEN, buttons=(_("Cancel"), Gtk.ResponseType.CANCEL, 
+		_("Open"),Gtk.ResponseType.OK))
 		open_file_chooser.set_current_folder("%s"%(os.environ['HOME']))
 		open_file_chooser.set_select_multiple(True)
 		response = open_file_chooser.run()
@@ -687,7 +686,7 @@ class BrailleWriter():
 		if(unsaved):
 			dialog =  Gtk.Dialog(_("Quit?"), self.window, 0,
 			(_("No"), Gtk.ResponseType.NO,_("Quit without saving?"),Gtk.ResponseType.YES))
-			label = Gtk.Label(string_unsaved_tab_labels[:-2]+" without saving?")
+			label = Gtk.Label(string_unsaved_tab_labels[:-2]+_(" without saving?"))
 
 			box = dialog.get_content_area();
 			box.add(label)

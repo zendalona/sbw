@@ -34,8 +34,8 @@ from sbw import global_var
 
 import enchant
 
-import gettext
-_ = gettext.gettext
+from sbw import localization
+_ = localization._
 
 class SpellCheck:
 	def __init__ (self,editor,enchant_language):
@@ -178,7 +178,7 @@ class SpellCheck:
 			self.sentence_end.forward_sentence_end()
 			
 			sentence = self.textbuffer.get_text(self.sentence_start,self.sentence_end,True)
-			context = _("Misspelled word {0} : -  {1}").format(self.word,sentence)
+			context = _(_("Misspelled word {0} : -  {1}")).format(self.word,sentence)
 			self.context_label.set_text(self.trim_context_text(context))
 			self.entry.set_text(self.word)
 			

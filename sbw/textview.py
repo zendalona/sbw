@@ -33,9 +33,6 @@ from gi.repository import Pango
 
 from brailleinput.engine import BrailleInputEngine
 
-import gettext
-_ = gettext.gettext
-
 class BrailleInputTextView(Gtk.TextView, BrailleInputEngine):
 	def __init__(self):
 		Gtk.TextView.__init__(self)

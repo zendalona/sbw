@@ -32,6 +32,9 @@ from gi.repository import Gdk
 
 from sbw import global_var
 
+from sbw import localization
+_ = localization._
+
 from brailleinput.engine import Keys
 
 
@@ -201,7 +204,7 @@ class Preferences():
 			combo.show()
 			
 			# Setting label
-			label = Gtk.Label("Table "+str(i+1))
+			label = Gtk.Label(_("Table ")+str(i+1))
 			label.set_mnemonic_widget(combo)
 			label.show()
 			
@@ -237,7 +240,7 @@ class Preferences():
 			combo.show()
 			
 			# Setting label
-			label = Gtk.Label("Language "+str(i+1))
+			label = Gtk.Label(_("Language "+str(i+1)))
 			label.set_mnemonic_widget(combo)
 			label.show()
 			
@@ -349,8 +352,8 @@ class Preferences():
 		# Copy new key bindings if there is no unassigned keybinding
 		if (None in self.keycode_map_new.values()):
 			dialog = Gtk.MessageDialog( flags=0, message_type=Gtk.MessageType.INFO,
-			buttons=Gtk.ButtonsType.OK, text="Unassigned keybinding found")
-			dialog.format_secondary_text("Find and fix unassigned keybindings before applying")
+			buttons=Gtk.ButtonsType.OK, text=_("Unassigned keybinding found"))
+			dialog.format_secondary_text(_("Find and fix unassigned keybindings before applying"))
 			dialog.run()
 			dialog.destroy()
 			return

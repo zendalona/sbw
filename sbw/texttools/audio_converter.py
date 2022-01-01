@@ -31,8 +31,8 @@ from threading import Thread
 from sbw.textview import BrailleInputTextView
 from sbw import global_var
 
-import gettext
-_ = gettext.gettext
+from sbw import localization
+_ = localization._
 
 class Recorder:
 	def __init__(self,text, copy_braille_view):
@@ -78,7 +78,7 @@ class Recorder:
 		title=_("Type the output wav name"),
 		parent=None,
 		action=Gtk.FileChooserAction.SELECT_FOLDER)
-		filechooser.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_SAVE, Gtk.ResponseType.OK)
+		filechooser.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL, _("Save"), Gtk.ResponseType.OK)
 		filechooser.set_current_folder("%s"%(os.environ['HOME']))
 
 		entry = BrailleInputTextView()
@@ -87,7 +87,7 @@ class Recorder:
 		entry.set_single_line_mode(True)
 
 		label = Gtk.Label()
-		label.set_text("Filename : ")
+		label.set_text(_("Filename : "))
 		label.set_mnemonic_widget(entry)
 			
 		box = Gtk.HBox()

@@ -41,28 +41,15 @@
         <property name="n-rows">7</property>
         <property name="n-columns">3</property>
         <child>
-          <object class="GtkLabel" id="label1">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <property name="label" translatable="yes">&lt;span size = 'xx-large'&gt;&lt;b&gt;Audio-Converter&lt;/b&gt;&lt;/span&gt;</property>
-            <property name="use-markup">True</property>
-          </object>
-          <packing>
-            <property name="right-attach">3</property>
-          </packing>
-        </child>
-        <child>
           <object class="GtkLabel" id="label2">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">&lt;b&gt;&lt;span size = 'large'&gt;Speed (Word Per Minute)   : &lt;/span&gt;&lt;/b&gt;</property>
-            <property name="use-markup">True</property>
+            <property name="label" translatable="yes">Speed (Word Per Minute)</property>
             <property name="use-underline">True</property>
             <property name="mnemonic-widget">spinbutton_speed</property>
           </object>
           <packing>
             <property name="right-attach">2</property>
-            <property name="top-attach">1</property>
             <property name="bottom-attach">2</property>
           </packing>
         </child>
@@ -78,7 +65,6 @@
           <packing>
             <property name="left-attach">2</property>
             <property name="right-attach">3</property>
-            <property name="top-attach">1</property>
             <property name="bottom-attach">2</property>
           </packing>
         </child>
@@ -86,7 +72,7 @@
           <object class="GtkLabel" id="label3">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">&lt;b&gt;&lt;span size = 'large'&gt;Pitch    : &lt;/span&gt;&lt;/b&gt;</property>
+            <property name="label" translatable="yes">Pitch</property>
             <property name="use-markup">True</property>
             <property name="use-underline">True</property>
             <property name="mnemonic-widget">spinbutton_pitch</property>
@@ -101,7 +87,7 @@
           <object class="GtkLabel" id="label4">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">&lt;b&gt;&lt;span size = 'large'&gt;Split time(Per Minute)  : &lt;/span&gt;&lt;/b&gt;</property>
+            <property name="label" translatable="yes">Split time(Per Minute)</property>
             <property name="use-markup">True</property>
             <property name="use-underline">True</property>
             <property name="mnemonic-widget">spinbutton_split</property>
@@ -197,7 +183,7 @@
           <object class="GtkLabel" id="label6">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">&lt;b&gt;&lt;span size = 'large'&gt;Language &lt;/span&gt;&lt;/b&gt;</property>
+            <property name="label" translatable="yes">Language</property>
             <property name="use-markup">True</property>
             <property name="use-underline">True</property>
             <property name="mnemonic-widget">combobox_language_convert</property>
@@ -212,7 +198,7 @@
           <object class="GtkLabel" id="label5">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
-            <property name="label" translatable="yes">&lt;b&gt;&lt;span size = 'large'&gt;Volume&lt;/span&gt;&lt;/b&gt;</property>
+            <property name="label" translatable="yes">Volume</property>
             <property name="use-markup">True</property>
             <property name="use-underline">True</property>
             <property name="mnemonic-widget">spinbutton_vloume</property>

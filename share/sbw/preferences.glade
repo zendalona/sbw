@@ -43,7 +43,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
     </columns>
     <data>
       <row>
-        <col id="0" translatable="yes">IBus-Braille Builtin</col>
+        <col id="0" translatable="yes">Built-in</col>
       </row>
       <row>
         <col id="0" translatable="yes">Liblouis</col>
@@ -81,10 +81,12 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                     <property name="halign">start</property>
                     <property name="valign">center</property>
                     <property name="vexpand">True</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Default table type&lt;/b&gt;</property>
-                    <property name="use-markup">True</property>
+                    <property name="label" translatable="yes">Default table type</property>
                     <property name="use-underline">True</property>
                     <property name="mnemonic-widget">combobox_table_type</property>
+                    <attributes>
+                      <attribute name="weight" value="bold"/>
+                    </attributes>
                   </object>
                   <packing>
                     <property name="left-attach">0</property>
@@ -181,8 +183,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;One hand mode&lt;/b&gt;</property>
-                        <property name="use-markup">True</property>
+                        <property name="label" translatable="yes">One hand mode</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                     </child>
                   </object>
@@ -262,8 +266,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Line limiting&lt;/b&gt;</property>
-                        <property name="use-markup">True</property>
+                        <property name="label" translatable="yes">Line limiting</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                     </child>
                   </object>
@@ -350,8 +356,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;View&lt;/b&gt;</property>
-                        <property name="use-markup">True</property>
+                        <property name="label" translatable="yes">View</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                     </child>
                   </object>
@@ -415,8 +423,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Auto capitalizing&lt;/b&gt;</property>
-                        <property name="use-markup">True</property>
+                        <property name="label" translatable="yes">Auto capitalizing</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                     </child>
                   </object>
@@ -452,8 +462,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                       <object class="GtkLabel">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label" translatable="yes">&lt;b&gt;Voice announcement&lt;/b&gt;</property>
-                        <property name="use-markup">True</property>
+                        <property name="label" translatable="yes">Voice announcement</property>
+                        <attributes>
+                          <attribute name="weight" value="bold"/>
+                        </attributes>
                       </object>
                     </child>
                   </object>
@@ -652,6 +664,7 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                               <object class="GtkAlignment" id="alignment2">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
+                                <property name="bottom-padding">10</property>
                                 <property name="left-padding">12</property>
                                 <child>
                                   <!-- n-columns=3 n-rows=17 -->
@@ -1142,8 +1155,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                               <object class="GtkLabel" id="label2">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">&lt;b&gt;Keys&lt;/b&gt;</property>
-                                <property name="use-markup">True</property>
+                                <property name="label" translatable="yes">Keys</property>
+                                <attributes>
+                                  <attribute name="weight" value="bold"/>
+                                </attributes>
                               </object>
                             </child>
                           </object>
@@ -1596,8 +1611,10 @@ along with .  If not, see <http://www.gnu.org/licenses/>.
                               <object class="GtkLabel" id="label3">
                                 <property name="visible">True</property>
                                 <property name="can-focus">False</property>
-                                <property name="label" translatable="yes">&lt;b&gt;Shortcuts&lt;/b&gt;</property>
-                                <property name="use-markup">True</property>
+                                <property name="label" translatable="yes">Shortcuts</property>
+                                <attributes>
+                                  <attribute name="weight" value="bold"/>
+                                </attributes>
                               </object>
                             </child>
                           </object>

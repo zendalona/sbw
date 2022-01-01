@@ -39,8 +39,8 @@ from sbw.texttools.find_and_replace import FindAndReplace
 from sbw.texttools.audio_converter import Recorder
 from sbw.texttools.spellcheck import SpellCheck
 
-import gettext
-_ = gettext.gettext
+from sbw import localization
+_ = localization._
 
 # For Undo/Redo
 import queue
@@ -88,7 +88,7 @@ class BrailleEditor(Gtk.VBox):
 		hbox.set_vexpand(False)
 
 		label = Gtk.Label()
-		label.set_text("Font ")
+		label.set_text(_("Font "))
 		self.font_button = Gtk.FontButton()
 		self.font_button.connect("font-set", self.on_font_set)
 		label.set_mnemonic_widget(self.font_button)
@@ -101,7 +101,7 @@ class BrailleEditor(Gtk.VBox):
 		self.background_color = "#000000"
 		
 		label = Gtk.Label()
-		label.set_text("Theme ")
+		label.set_text(_("Theme "))
 		self.combobox_theme = Gtk.ComboBox()
 		self.combobox_theme.connect("changed", self.on_theme_changed)
 		label.set_mnemonic_widget(self.combobox_theme)
@@ -112,7 +112,7 @@ class BrailleEditor(Gtk.VBox):
 
 
 		label = Gtk.Label()
-		label.set_text("Line limit")
+		label.set_text(_("Line limit"))
 		self.spinbutton_line_limit = Gtk.SpinButton()
 		adjustment = Gtk.Adjustment(upper=400, step_increment=1, page_increment=10)
 		self.spinbutton_line_limit.set_adjustment(adjustment)
@@ -124,31 +124,31 @@ class BrailleEditor(Gtk.VBox):
 		hbox.pack_start(fixed,True,True,0)
 
 
-		self.checkbutton_auto_new_line = Gtk.CheckButton("Auto new line")
+		self.checkbutton_auto_new_line = Gtk.CheckButton(_("Auto new line"))
 		self.checkbutton_auto_new_line.connect("toggled",self.on_auto_new_line_toggled)
 		hbox.pack_start(self.checkbutton_auto_new_line,False,True,0)
 		fixed = Gtk.Fixed()
 		hbox.pack_start(fixed,True,True,0)
 
-		self.checkbutton_speech = Gtk.CheckButton("Speech")
+		self.checkbutton_speech = Gtk.CheckButton(_("Speech"))
 		self.checkbutton_speech.connect("toggled",self.on_speech_toggled)
 		hbox.pack_start(self.checkbutton_speech,False,True,0)
 		fixed = Gtk.Fixed()
 		hbox.pack_start(fixed,True,True,0)
 
-		self.checkbutton_simple_mode = Gtk.CheckButton("Simple mode")
+		self.checkbutton_simple_mode = Gtk.CheckButton(_("Simple mode"))
 		self.checkbutton_simple_mode.connect("toggled",self.on_simple_mode_toggled)
 		hbox.pack_start(self.checkbutton_simple_mode,False,True,0)
 		fixed = Gtk.Fixed()
 		hbox.pack_start(fixed,True,True,0)
 
-		self.checkbutton_auto_capitalize_sentence = Gtk.CheckButton("Auto capitalize sentence")
+		self.checkbutton_auto_capitalize_sentence = Gtk.CheckButton(_("Auto capitalize sentence"))
 		self.checkbutton_auto_capitalize_sentence.connect("toggled",self.on_auto_capitalize_sentence_toggled)
 		hbox.pack_start(self.checkbutton_auto_capitalize_sentence,False,True,0)
 		fixed = Gtk.Fixed()
 		hbox.pack_start(fixed,True,True,0)
 
-		self.checkbutton_auto_capitalize_line = Gtk.CheckButton("Auto capitalize line")
+		self.checkbutton_auto_capitalize_line = Gtk.CheckButton(_("Auto capitalize line"))
 		self.checkbutton_auto_capitalize_line.connect("toggled",self.on_auto_capitalize_line_toggled)
 		hbox.pack_start(self.checkbutton_auto_capitalize_line,False,True,0)
 		fixed = Gtk.Fixed()
@@ -220,8 +220,6 @@ class BrailleEditor(Gtk.VBox):
 	def change_font_size(self, increase = True):
 		font = self.font_button.get_font()
 		size = int(str(font.split(" ")[-1]))
-		print("FFFFFFFFFFFFFF")
-		print(size)
 
 		if(increase):
 			size = size + 2
@@ -307,8 +305,6 @@ class BrailleEditor(Gtk.VBox):
 	def on_brailletextview_focused(self,widget, data=None):
 		self.notify_language_callback(self.notify_language)
 		self.brailletextview.reset()
-		print("FFFFFFFFFFFOOOOOOCCCCCCCC")
-
 
 	def set_line_limit(self, limit):
 		self.spinbutton_line_limit.set_value(limit)
@@ -423,7 +419,7 @@ class BrailleEditor(Gtk.VBox):
 				self.save(self)
 		self.brailletextview.set_text("")
 		self.brailletextview.grab_focus();
-		self.notify2("New");
+		self.notify2(_("New"));
 
 	# Note : Unused function  
 	def open(self,wedget,data=None):
@@ -432,8 +428,8 @@ class BrailleEditor(Gtk.VBox):
 		else:
 			open_file_chooser = Gtk.FileChooserDialog(_("Select the file to open"),None,
 			Gtk.FileChooserAction.OPEN,
-			buttons=(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, 
-			Gtk.STOCK_OPEN,Gtk.ResponseType.OK))
+			buttons=(_("Cancel"), Gtk.ResponseType.CANCEL, 
+			_("Open"),Gtk.ResponseType.OK))
 			open_file_chooser.set_current_folder("%s"%(os.environ['HOME']))
 			response = open_file_chooser.run()
 			if response == Gtk.ResponseType.OK:
@@ -465,7 +461,7 @@ class BrailleEditor(Gtk.VBox):
 			title="Please choose a folder and type filename",
 			parent=None,
 			action=Gtk.FileChooserAction.SELECT_FOLDER)
-			filechooser.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, "Save", Gtk.ResponseType.OK)
+			filechooser.add_buttons(_("Cancel"), Gtk.ResponseType.CANCEL, "Save", Gtk.ResponseType.OK)
 			filechooser.set_current_folder("%s"%(os.environ['HOME']))
 
 			entry = BrailleInputTextView()
@@ -474,7 +470,7 @@ class BrailleEditor(Gtk.VBox):
 			entry.set_single_line_mode(True)
 
 			label = Gtk.Label()
-			label.set_text("Filename : ")
+			label.set_text(_("Filename : "))
 			label.set_mnemonic_widget(entry)
 			
 			box = Gtk.HBox()
@@ -499,7 +495,6 @@ class BrailleEditor(Gtk.VBox):
 			
 			
 			response = filechooser.run()
-			print("Hai")
 			if response == Gtk.ResponseType.OK:
 				file_name = entry.get_text()
 				path = filechooser.get_filename()
@@ -513,7 +508,7 @@ class BrailleEditor(Gtk.VBox):
 					filechooser.destroy()
 					return True
 				else:
-					dialog =  Gtk.Dialog("Save", None,1,
+					dialog =  Gtk.Dialog(_("Save"), None,1,
 					(_("Replace"),Gtk.ResponseType.YES,_("Save as"), Gtk.ResponseType.NO))
 					label = Gtk.Label(_("File exist! Do you want to replace it ?"))
 					box = dialog.get_content_area();
