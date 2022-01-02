@@ -1,3 +1,9 @@
+sbw (3.7.3-1) focal; urgency=medium
+
+  * MAN page updated
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 02 Jan 2022 11:52:45 +0530
+
 sbw (3.7.2-1) focal; urgency=medium
 
   * Sourcecode modified for UI translation
