@@ -68,10 +68,10 @@ class BrailleInputTextView(Gtk.TextView, BrailleInputEngine):
 			self.scroll_to_mark(insert_mark,0.0,False,0.0,0.0)
 		
 	def key_press_handler(self,widget,event):
-		return self.key_pressed(event)
+		return self.key_pressed(event.hardware_keycode)
 
 	def key_release_handler(self,widget,event):
-		return self.key_released(event)
+		return self.key_released(event.hardware_keycode)
 
 	def get_text(self):
 		textbuffer = self.get_buffer();

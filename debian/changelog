@@ -1,3 +1,9 @@
+sbw (3.7.4-1) focal; urgency=medium
+
+  * Updated with Libbraille-input
+
+ -- Nalin <nalin.x.linux@gmail.com>  Sun, 10 Jul 2022 11:24:49 +0530
+
 sbw (3.7.3-1) focal; urgency=medium
 
   * MAN page updated
