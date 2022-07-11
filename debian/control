@@ -10,7 +10,7 @@ Standards-Version: 4.2.1
 
 Package: sharada-braille-writer
 Architecture: all
-Depends: ${python3:Depends}, ${misc:Depends}, libbraille-input (>= 0.7.5), python3-gi, gir1.2-gtk-3.0, python3-speechd, espeak, python3-enchant, aspell-en
+Depends: ${python3:Depends}, ${misc:Depends}, libbraille-input (>= 0.9), python3-gi, gir1.2-gtk-3.0, python3-speechd, espeak, python3-enchant, aspell-en
 Description: Simple text editor with braille input
  Sharada-Braille-Writer allows one to use the PC keyboard to type text in
  graphical desktops in a Perkins-like way, i.e. braille patterns.
